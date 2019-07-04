@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+
+}
+
+.app{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("./background-calm-clouds-747964.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+
+.typing{
+    margin-left: 10px;
+    position: relative;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    border-right: 2px solid white;
+    width: 1px;
+    right: -5px;
+    height: 5%;
+    animation: blink 1s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
